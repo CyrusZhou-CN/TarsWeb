@@ -1,6 +1,6 @@
 const path = require("path")
 const CopyWebpackPlugin = require('copy-webpack-plugin')
-const server_port = process.env.SERVER_PORT || '4001'
+const server_port = process.env.SERVER_PORT || '3000'
 
 process.setMaxListeners(0);
 
