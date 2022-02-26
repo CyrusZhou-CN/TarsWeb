@@ -468,7 +468,7 @@ export default {
 
         for (let index = 0; index < itemEl.length; index++) {
           const item = itemEl[index];
-          const iclass = $(item).getAttribute("class");
+          const iclass = item.getAttribute("class");
           if (iclass.indexOf("active") > -1) {
             currEl = item;
           }
