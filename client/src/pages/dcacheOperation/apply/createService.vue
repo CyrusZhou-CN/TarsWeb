@@ -315,7 +315,7 @@ import { checkServerIdentity } from 'tls';
   }
 </script>
 
-<style>
+<style lang="postcss">
   .let-form-cols-1 .let-form-item__label {
     width: 140px;
   }

@@ -351,7 +351,7 @@ export default {
 };
 </script>
 
-<style>
+<style lang="postcss">
 .list .text {
   font-size: 14px;
 }

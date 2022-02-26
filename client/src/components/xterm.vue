@@ -184,7 +184,7 @@ export default {
 };
 </script>
 
-<style>
+<style lang="postcss">
 body {
   margin: 0;
   overflow: hidden;

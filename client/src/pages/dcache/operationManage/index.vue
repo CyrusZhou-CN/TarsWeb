@@ -30,7 +30,7 @@ export default{
   }
 }
 </script>
-<style>
+<style lang="postcss">
 .operation-manage {
   display: flex;
   flex: 1;

@@ -68,6 +68,8 @@ module.exports = {
     // }
   },
   configureWebpack: {
+    // Visual Studio Code 调试Vue
+    devtool: 'source-map',
     plugins: [new CopyWebpackPlugin([{
       from: path.resolve(__dirname, './static'),
       to: path.resolve(__dirname, './dist/static'),

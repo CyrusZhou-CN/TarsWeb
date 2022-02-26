@@ -335,7 +335,7 @@ export default {
 };
 </script>
 
-<style>
+<style lang="postcss">
 .page_base_affinity {
 
 pre {

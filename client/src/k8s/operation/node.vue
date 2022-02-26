@@ -763,7 +763,7 @@ pre {
 }
 </style>
 
-<style>
+<style lang="postcss">
 .el-form--label-top .el-form-item__label {
   /*elementui 当formitem 在上方的时候padding过大*/
   padding: 0 0 0px !important;

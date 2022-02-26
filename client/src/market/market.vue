@@ -194,7 +194,7 @@ export default {
 };
 </script>
 
-<style>
+<style lang="postcss">
 @import "../assets/css/variable.css";
 
 .el-icon-third-shuaxin.active {

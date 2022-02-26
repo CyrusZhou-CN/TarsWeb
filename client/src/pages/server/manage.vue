@@ -1256,7 +1256,7 @@ export default {
         }
       }).catch((err) => {
         loading.hide();
-         const opt = {
+        const opt = {
             title: this.$t('common.error'),
             message: err.err_msg || err.message,
           };
@@ -1264,10 +1264,11 @@ export default {
           this.$tip.error(opt);
       });
     },
-    invokeMoreCmd() {
+    invokeMoreCmd() {   
+      // 用 model 名称无法赋值   
+      const _model = this.moreCmdModal.model;
       if (this.isBatchShowCmd) {
         const checkedList = this.serverList.filter(item => item.isChecked === true);
-        const model = this.moreCmdModal.model;
           // 下线服务
           if (model.selected === 'undeploy_tars') {
             this.undeployServers(checkedList);
@@ -1281,26 +1282,28 @@ export default {
             checkedList.forEach((item)=> {this.sendCommand(item.id, `tars.connection`, true);})
           }
       }else{
-        const model = this.moreCmdModal.model;
         const server = this.moreCmdModal.currentServer;
         // 下线服务
-        if (model.selected === 'undeploy_tars') {
+        if (_model.selected === 'undeploy_tars') {
           this.undeployServer(server);
           // 设置日志等级
-        } else if (model.selected === 'setloglevel') {
-          this.sendCommand(server.id, `tars.setloglevel ${model.setloglevel}`);
+        } else if (_model.selected === 'setloglevel') {
+          this.sendCommand(server.id, `tars.setloglevel ${_model.setloglevel}`);
           // push 日志文件
-        } else if (model.selected === 'loadconfig' && this.$refs.moreCmdForm.validate()) {
-          this.sendCommand(server.id, `tars.loadconfig ${model.loadconfig}`);
+        } else if (_model.selected === 'loadconfig' && this.$refs.moreCmdForm.validate()) {
+          this.sendCommand(server.id, `tars.loadconfig ${_model.loadconfig}`);
           // 发送自定义命令
-        } else if (model.selected === 'command' && this.$refs.moreCmdForm.validate()) {
-          this.sendCommand(server.id, model.command, true);
+        } else if (_model.selected === 'command' && this.$refs.moreCmdForm.validate()) {
+          this.sendCommand(server.id, _model.command, true);
           // 查看服务链接
-        } else if (model.selected === 'connection') {
+        } else if (_model.selected === 'connection') {
           this.sendCommand(server.id, `tars.connection`, true);
         }
       }
-      this.closeMoreCmdModal();
+      // 发送自定义命令不关闭窗口
+      if (_model.selected !== 'command'){
+        this.closeMoreCmdModal();
+      }
     },
     closeMoreCmdModal() {
       if (this.$refs.moreCmdForm) this.$refs.moreCmdForm.resetValid();

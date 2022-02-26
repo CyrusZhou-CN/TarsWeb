@@ -324,7 +324,7 @@
   }
 </script>
 
-<style>
+<style lang="postcss">
   .server_config_list_modal .let_modal__body {
     max-height: 500px;
     overflow-y: auto;

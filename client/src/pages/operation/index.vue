@@ -44,7 +44,7 @@ export default {
 };
 </script>
 
-<style>
+<style lang="postcss">
 .page_operation {
   display: flex;
   flex: 1;

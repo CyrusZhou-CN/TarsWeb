@@ -116,7 +116,7 @@
     }
   }
 </script>
-<style>
+<style lang="postcss">
   .non-server-migration .let-form-item__label {
     margin-left: 0px;
   }

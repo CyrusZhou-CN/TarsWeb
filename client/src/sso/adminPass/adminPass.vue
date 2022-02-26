@@ -99,7 +99,7 @@ export default {
   },
 };
 </script>
-<style>
+<style lang="postcss">
   @import "../../assets/font/lato/Lato.css";
   @import '../../assets/css/reset.css';
   @import '../../assets/css/variable.css';

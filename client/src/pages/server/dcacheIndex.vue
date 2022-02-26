@@ -129,6 +129,7 @@ import DPropertyMonitor from '@/pages/dcache/propertyMonitor/index.vue'
       return {
         treeErrMsg: '加载失败',
         treeData: null,
+        isIconPlay: false,
         treeid: '',
         enableAuth: false,
         // 当前页面信息
@@ -171,12 +172,13 @@ import DPropertyMonitor from '@/pages/dcache/propertyMonitor/index.vue'
           let itemEl = el.children || []
           let currEl = ''
 
-          itemEl.forEach(item => {
+          for (let index = 0; index < itemEl.length; index++) {
+            const item = itemEl[index];
             const iclass = item.getAttribute('class')
             if(iclass.indexOf('active') > -1) {
               currEl = item
             }
-          })
+          }
 
           if(currEl.offsetLeft < boxEl.scrollLeft){
             const x = currEl.offsetLeft
@@ -369,12 +371,13 @@ import DPropertyMonitor from '@/pages/dcache/propertyMonitor/index.vue'
           let itemEl = boxEl.children || []
           let currEl = ''
 
-          itemEl.forEach(item => {
+          for (let index = 0; index < itemEl.length; index++) {
+            const item = itemEl[index];
             const iclass = item.getAttribute('class')
             if(iclass.indexOf('active') > -1) {
               currEl = item
             }
-          })
+          }
 
           if(currEl.offsetLeft < boxEl.scrollLeft){
             const x = currEl.offsetLeft

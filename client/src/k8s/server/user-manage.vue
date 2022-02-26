@@ -64,7 +64,7 @@ export default {
 };
 </script>
 
-<style>
+<style lang="postcss">
 .page_server_server_monitor {
   padding-bottom: 20px;
 

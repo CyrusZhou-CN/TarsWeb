@@ -1271,7 +1271,7 @@ export default {
 };
 </script>
 
-<style>
+<style lang="postcss">
 @import "../../assets/css/variable.css";
 
 .page_server_publish {

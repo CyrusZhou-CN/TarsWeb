@@ -114,7 +114,7 @@
   }
 </script>
 
-<style>
+<style lang="postcss">
   .alignRight {
     float: right;
   }

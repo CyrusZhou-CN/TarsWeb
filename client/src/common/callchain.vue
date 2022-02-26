@@ -31,7 +31,7 @@ export default {
   },
 };
 </script>
-<style>
+<style lang="postcss">
 .el-card .el-card__body {
   padding: 0;
 }

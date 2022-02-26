@@ -57,7 +57,7 @@ export default {
 }
 </script>
 
-<style>
+<style lang="postcss">
 .diff_wrap .hljs{
   display: inline-block;
   padding: 0;

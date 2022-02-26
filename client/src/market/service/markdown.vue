@@ -117,7 +117,7 @@ window.doFetchReadme = (file) => {
 };
 </script>
 
-<style>
+<style lang="postcss">
 ol,
 ul,
 li {

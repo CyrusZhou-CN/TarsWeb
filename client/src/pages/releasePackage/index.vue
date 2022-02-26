@@ -21,7 +21,7 @@ export default {
 };
 </script>
 
-<style>
+<style lang="postcss">
 .page_operation {
   padding-top: 30px;
   padding-bottom: 40px;

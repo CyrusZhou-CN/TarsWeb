@@ -17,7 +17,7 @@
   };
 </script>
 
-<style>
+<style lang="postcss">
   .tars-form-item {
 
   .clickable {

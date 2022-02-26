@@ -14,7 +14,7 @@ export default {
 };
 </script>
 
-<style>
+<style lang="postcss">
 .app_index__footer {
   height: 48px;
   background: #F0F2F5;

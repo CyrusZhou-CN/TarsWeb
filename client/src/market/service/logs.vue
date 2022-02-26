@@ -60,7 +60,7 @@ export default {
 };
 </script>
 
-<style>
+<style lang="postcss">
 ol,
 ul,
 li {

@@ -92,7 +92,7 @@
   };
 </script>
 
-<style>
+<style lang="postcss">
   .set_inputer {
 
   &

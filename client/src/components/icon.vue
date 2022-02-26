@@ -16,7 +16,7 @@
   };
 </script>
 
-<style>
+<style lang="postcss">
   .icon {
     fill: currentcolor;
     height: 1em;

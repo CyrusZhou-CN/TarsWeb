@@ -222,7 +222,7 @@ export default {
 };
 </script>
 
-<style>
+<style lang="postcss">
 .page_operation_undeploy {
   pre {
     color: #909fa3;

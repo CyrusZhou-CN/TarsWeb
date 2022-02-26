@@ -120,7 +120,7 @@ export default {
 };
 </script>
 
-<style>
+<style lang="postcss">
 .compare-chart {
   position: relative;
 

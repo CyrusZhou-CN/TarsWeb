@@ -418,7 +418,7 @@ export default {
 };
 </script>
 
-<style>
+<style lang="postcss">
 .page_operation_deploy {
   .let-table {
     margin: 20px 0 36px;

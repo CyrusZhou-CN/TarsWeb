@@ -86,6 +86,6 @@
   }
 </script>
 
-<style>
+<style lang="postcss">
   .page_operation{overflow:auto;}
 </style>

@@ -199,7 +199,7 @@ export default {
 };
 </script>
 
-<style>
+<style lang="postcss">
 .page_operation_templates {
   pre {
     color: #909FA3;

@@ -239,7 +239,7 @@ export default {
 };
 </script>
 
-<style>
+<style lang="postcss">
 .el-card-define .el-card__body {
   padding: 0px;
   height: 260px;

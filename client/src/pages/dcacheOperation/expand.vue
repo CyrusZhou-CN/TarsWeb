@@ -378,7 +378,7 @@ export default {
 };
 </script>
 
-<style>
+<style lang="postcss">
 .mt40 {
   margin-top: 40px;
 }

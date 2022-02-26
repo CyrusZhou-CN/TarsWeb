@@ -825,7 +825,7 @@ export default {
 };
 </script>
 
-<style>
+<style lang="postcss">
 .set_inputer_item {
   float: left;
   margin-right: 8px;

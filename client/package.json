@@ -17,7 +17,7 @@
     "es6-promise": "^4.2.8",
     "highlight.js": "^11.3.1",
     "js-yaml": "^4.0.0",
-    "let-ui": "^0.1.23",
+    "let-ui": "^0.1.25",
     "lodash": "^4.17.14",
     "marked": "^4.0.8",
     "request": "^2.88.0",

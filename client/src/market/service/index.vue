@@ -333,7 +333,7 @@ export default {
 };
 </script>
 
-<style>
+<style lang="postcss">
 .header .el-select .el-input__inner {
   border: 0px;
 }

@@ -327,7 +327,7 @@ export default {
   },
 };
 </script>
-<style>
+<style lang="postcss">
   .top-title{
     margin: 16px 0;
     line-height: 2.5;

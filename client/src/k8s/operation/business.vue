@@ -382,7 +382,7 @@ export default {
 };
 </script>
 
-<style>
+<style lang="postcss">
 .page_base_business {
   pre {
     color: #909FA3;

@@ -646,7 +646,7 @@ export default {
 }
 </style>
 
-<style>
+<style lang="postcss">
 .page_operation_approval {
   pre {
     color: #909fa3;

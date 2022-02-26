@@ -608,7 +608,7 @@ export default {
 };
 </script>
 
-<style>
+<style lang="postcss">
 svg {
   font-size: 12px;
 }

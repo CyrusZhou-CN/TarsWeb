@@ -245,12 +245,13 @@ export default {
         let itemEl = el.children || [];
         let currEl = "";
 
-        itemEl.forEach((item) => {
+        for (let index = 0; index < itemEl.length; index++) {
+          const item = itemEl[index];
           const iclass = item.getAttribute("class");
           if (iclass.indexOf("active") > -1) {
             currEl = item;
           }
-        });
+        }
 
         if (currEl.offsetLeft < boxEl.scrollLeft) {
           const x = currEl.offsetLeft;
@@ -465,12 +466,13 @@ export default {
         let itemEl = boxEl.children || [];
         let currEl = "";
 
-        itemEl.forEach((item) => {
-          const iclass = item.getAttribute("class");
+        for (let index = 0; index < itemEl.length; index++) {
+          const item = itemEl[index];
+          const iclass = $(item).getAttribute("class");
           if (iclass.indexOf("active") > -1) {
             currEl = item;
           }
-        });
+        }
 
         if (currEl.offsetLeft < boxEl.scrollLeft) {
           const x = currEl.offsetLeft;
@@ -584,7 +586,7 @@ export default {
 };
 </script>
 
-<style>
+<style lang="postcss">
 @import "../../assets/css/variable.css";
 
 .el-icon-third-shuaxin.active {

@@ -1818,44 +1818,45 @@ export default {
         });
     },
     invokeMoreCmd() {
-      const model = this.moreCmdModal.model;
+      // 用 model 名称无法赋值
+      const _model = this.moreCmdModal.model;
       const server = this.moreCmdModal.currentServer;
       // 下线服务
-      if (model.selected === "setloglevel") {
+      if (_model.selected === "setloglevel") {
         this.sendCommand(
-          model.serverApp,
-          model.serverName,
-          model.podIp,
-          `tars.setloglevel ${model.setloglevel}`
+          _model.serverApp,
+          _model.serverName,
+          _model.podIp,
+          `tars.setloglevel ${_model.setloglevel}`
         );
         // push 日志文件
       } else if (
-        model.selected === "loadconfig" &&
+        _model.selected === "loadconfig" &&
         this.$refs.moreCmdForm.validate()
       ) {
         this.sendCommand(
-          model.serverApp,
-          model.serverName,
-          model.podIp,
-          `tars.loadconfig ${model.loadconfig}`
+          _model.serverApp,
+          _model.serverName,
+          _model.podIp,
+          `tars.loadconfig ${_model.loadconfig}`
         );
         // 发送自定义命令
       } else if (
-        model.selected === "command" &&
+        _model.selected === "command" &&
         this.$refs.moreCmdForm.validate()
       ) {
         this.sendCommand(
-          model.serverApp,
-          model.serverName,
-          model.podIp,
-          model.command
+          _model.serverApp,
+          _model.serverName,
+          _model.podIp,
+          _model.command
         );
         // 查看服务链接
-      } else if (model.selected === "connection") {
+      } else if (_model.selected === "connection") {
         this.sendCommand(
-          model.serverApp,
-          model.serverName,
-          model.podIp,
+          _model.serverApp,
+          _model.serverName,
+          _model.podIp,
           `tars.connection`,
           true
         );

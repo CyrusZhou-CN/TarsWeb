@@ -112,7 +112,7 @@ export default {
 };
 </script>
 
-<style>
+<style lang="postcss">
 .page_router {
   display: flex;
   flex: 1;

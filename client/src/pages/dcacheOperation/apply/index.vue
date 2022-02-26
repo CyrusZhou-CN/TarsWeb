@@ -48,7 +48,7 @@
   };
 </script>
 
-<style>
+<style lang="postcss">
   .apply_steps {
     margin: 10px 0 20px;
     padding-bottom: 20px;

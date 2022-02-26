@@ -189,7 +189,7 @@ export default {
 };
 </script>
 
-<style>
+<style lang="postcss">
 .page_operation_history {
   pre {
     color: #909FA3;
