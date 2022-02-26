@@ -115,7 +115,6 @@
           if (!activeServers.length) this.canOffline = true;
           this.show = true;
         } catch (err) {
-          console.error(err);
           this.$tip.error(err.message)
         }
       },
@@ -123,15 +122,12 @@
         return this.offlineServers.filter(server => server.present_state === 'active' || server.setting_state === 'active')
       },
       async sureOffline() {
-        const { offlineServers, unType } = this;
+        const {$Loading, offlineServers, unType } = this;
         const serverNames = offlineServers.map(server => `DCache.${server.server_name}`);
         const appName = offlineServers[0].app_name;
         const moduleName = offlineServers[0].module_name;
         const option = { unType, appName, moduleName, serverNames };
-        let loading = this.$Loading({
-          text: 'loading...'
-        });
-        loading.show();
+        let loading = $Loading.show();        
         try {
           const data = await uninstall4DCache(option);
           this.$tip.success('下线成功!');
@@ -146,6 +142,6 @@
     }
   }
 </script>
-<style lang="postcss">
+<style>
 
 </style>
