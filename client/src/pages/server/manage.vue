@@ -1294,7 +1294,7 @@ export default {
           this.sendCommand(server.id, `tars.loadconfig ${_model.loadconfig}`);
           // 发送自定义命令
         } else if (_model.selected === 'command' && this.$refs.moreCmdForm.validate()) {
-          this.sendCommand(server.id, _model.command, true);
+          this.sendCommand(server.id, _model.command, false);// 自动隐藏提示
           // 查看服务链接
         } else if (_model.selected === 'connection') {
           this.sendCommand(server.id, `tars.connection`, true);
